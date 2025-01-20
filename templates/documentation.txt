@@ -1,0 +1,47 @@
+                                                ECOMMERCE WEBISTE
+1. ADMIN
+->Register
+->Login
+->Forgot Password
+->Admin Dashboard
+   Add Item
+   View All Items
+        View, Update, delete, read_reviews
+->Admin Profile Page
+->Update Profile
+-> Logout
+
+
+
+2. USER
+->Register
+->Login
+->Forgot Password
+->User Dashboard
+    View All Items
+    Categories of Each Product
+    View Single Product-->Read Reviews-->Add Reviews 
+    Add to Cart (By using session)
+    View Cart--> Buy now-->Remove From the Cart
+    Buy now (Razor Pay)
+    My Orders
+    Search
+    Logout
+
+
+3. AWS (Deployment)
+
+
+
+                                                ERRORS
+Bad Request Key Error : if name attribute doesnot match
+Build Error : route is not defined.
+Timedout Error : Server is not live.
+Name Error : module is not imported.
+SMTP authentication Error : 16 digit code is wrong
+
+[user] 30-12-2024
+Register
+Login
+otp
+forgot password
