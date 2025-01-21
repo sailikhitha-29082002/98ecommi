@@ -3,7 +3,7 @@ from otp import genotp
 from cmail import sendmail
 from stoken import encode,decode
 import os
-import razorpay
+#import razorpay
 import re
 from mysql.connector import (connection)  #database and flask connection
 import mysql.connector
@@ -27,7 +27,7 @@ app.config['SESSION_TYPE']='filesystem' #to store session data
 app.secret_key='likhitha@123' #secret key to activate flash messages
 RAZORPAY_KEY_ID='rzp_test_BdYxoi5GaEITjc'
 RAZORPAY_KEY_SECRET='H0FUH2n4747ZSYBRyCn2D6rc'
-client=razorpay.Client(auth=(RAZORPAY_KEY_ID,RAZORPAY_KEY_SECRET))
+#client=razorpay.Client(auth=(RAZORPAY_KEY_ID,RAZORPAY_KEY_SECRET))
 @app.route('/')   #by default read method
 def home():
     return render_template('welcome.html')  #It will load the template and show in the front-end
@@ -512,7 +512,7 @@ def userlogout():
         return redirect(url_for('userlogin'))
     return redirect(url_for('userlogin'))
 
-@app.route('/pay/<itemid>/<name>/<float:price>',methods=['GET','POST'])
+'''@app.route('/pay/<itemid>/<name>/<float:price>',methods=['GET','POST'])
 def pay(itemid,name,price):
     try:
         qyt=int(request.form['qyt'])
@@ -556,7 +556,7 @@ def success():
         return 'pay Verification Failed',400
     else:
         flash('order placed successfully')
-        return 'good placed order'
+        return good placed order'''
 @app.route('/orders')
 def orders():
     if session.get('user'):
